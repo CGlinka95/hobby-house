@@ -11,6 +11,7 @@ const navbar = () => {
         <Flex>
             <Flex 
               pos="absolute"
+              top="2rem"
               right="2rem"
               align="center"
             >   
