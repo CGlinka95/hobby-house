@@ -1,11 +1,13 @@
 import React from "react";
 import { Container, Flex, Heading } from "@chakra-ui/react";
-import NavBar from "../components/navbar/navbar";
+import NavBar from "../components/navbar/NavBar";
+import Sidebar from "../components/sidebar/SideBar"
 
 const Home = () => {
   return (
     <Container maxW="container.xl" p={0}>
-      <Flex w="100vw" py={7}>
+      <Flex py={7}>
+        <Sidebar />
         <Heading px="2rem">Hobby House</Heading>
         <NavBar />
       </Flex>
