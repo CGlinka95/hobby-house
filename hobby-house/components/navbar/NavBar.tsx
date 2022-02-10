@@ -1,9 +1,9 @@
-import { useColorMode, Switch, Flex, Button, IconButton, Heading } from "@chakra-ui/react";
+import { useColorMode, Switch, Flex, Button, IconButton } from "@chakra-ui/react";
 import { useState } from "react";
 import { FaHamburger, FaTimesCircle } from "react-icons/fa";
 import NextLink from 'next/link';
 
-const navbar = () => {
+const NavBar = () => {
     const { colorMode, toggleColorMode } = useColorMode()
     const isDark = colorMode === 'dark'
     const [display, changeDisplay] = useState('none')
@@ -14,7 +14,7 @@ const navbar = () => {
               top="1rem"
               right="2rem"
               align="center"
-            >   
+            >  
                 <Flex
                   display={['none', 'none', 'flex', 'flex']}
                 >
@@ -61,7 +61,7 @@ const navbar = () => {
                   onClick={() => changeDisplay('flex')}
                 />
                 <Switch 
-                  color="orange"
+                  color="orangered"
                   isChecked={isDark}
                   onChange={toggleColorMode}
                 />  
@@ -131,4 +131,4 @@ const navbar = () => {
     )
 }
 
-export default navbar;
+export default NavBar;

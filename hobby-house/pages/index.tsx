@@ -1,16 +1,16 @@
 import React from "react";
-import { Box, Container, Flex, Heading } from "@chakra-ui/react";
-import Cart  from '../components/cart';
-import Details from '../components/details';
-import Navbar from "../components/navbar";
+import { Container, Flex, Heading } from "@chakra-ui/react";
+import NavBar from "../components/navbar/navbar";
 
 const Home = () => {
   return (
     <Container maxW="container.xl" p={0}>
-      <Navbar />
-      <Flex h="100vh" py={20}>
-        <Details />
-        <Cart />
+      <Flex w="100vw" py={7}>
+        <Heading px="2rem">Hobby House</Heading>
+        <NavBar />
+      </Flex>
+      <Flex h="100vh" py={15}>
+
       </Flex>
     </Container>
   )
