@@ -1,18 +1,26 @@
-import { useColorMode, Switch, Flex, Button, IconButton } from "@chakra-ui/react";
+import { 
+    Heading,
+    useColorMode, 
+    Switch, 
+    Flex, 
+    Button, 
+    IconButton 
+  } from "@chakra-ui/react";
 import { useState } from "react";
-import { FaHamburger, FaTimesCircle } from "react-icons/fa";
+import { 
+    FaHamburger, 
+    FaTimesCircle 
+  } from "react-icons/fa";
 import NextLink from 'next/link';
 
-const NavBar = () => {
+export default function NavBar() {
     const { colorMode, toggleColorMode } = useColorMode()
     const isDark = colorMode === 'dark'
     const [display, changeDisplay] = useState('none')
     return (
-        <Flex>
+        <Flex justifyContent="space-around">
+          <Heading p="1rem">Hobby House</Heading>
             <Flex 
-              pos="absolute"
-              top="1rem"
-              right="2rem"
               align="center"
             >  
                 <Flex
@@ -61,7 +69,7 @@ const NavBar = () => {
                   onClick={() => changeDisplay('flex')}
                 />
                 <Switch 
-                  color="orangered"
+                  color="blue.500"
                   isChecked={isDark}
                   onChange={toggleColorMode}
                 />  
@@ -130,5 +138,3 @@ const NavBar = () => {
         </Flex> 
     )
 }
-
-export default NavBar;
