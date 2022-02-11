@@ -57,7 +57,7 @@ export default function SideBar() {
                 <NavItem navSize={navSize} icon={FiHome} title="Dashboard" description="This is the description for the dashboard" />
                 <NavItem navSize={navSize} icon={IoSearch} title="Search" active />
                 <NavItem navSize={navSize} icon={IoAlbumsOutline} title="Categories" />
-                <NavItem navSize={navSize} icon={IoCartOutline} title="Products" />
+                <NavItem navSize={navSize} icon={IoCartOutline} title="Shopping Cart" />
                 <NavItem navSize={navSize} icon={IoOptionsOutline} title="Settings" />
                 <NavItem navSize={navSize} icon={IoHandLeftOutline} title="Services" />
             </Flex>

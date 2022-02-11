@@ -41,7 +41,7 @@ export default function NavBar() {
                     <Button
                       as="a"
                       variant="ghost"
-                      aria-label="Home"
+                      aria-label="About"
                       my={5}
                       w="100%"
                     >
@@ -52,11 +52,22 @@ export default function NavBar() {
                     <Button
                       as="a"
                       variant="ghost"
-                      aria-label="Home"
+                      aria-label="Contact"
                       my={5}
                       w="100%"
                     >
                       Contact
+                    </Button>
+                  </NextLink>
+                  <NextLink href="/" passHref>
+                    <Button
+                      as="a"
+                      variant="ghost"
+                      aria-label="Login"
+                      my={5}
+                      w="100%"
+                    >
+                      Login
                     </Button>
                   </NextLink>
                 </Flex>
@@ -115,7 +126,7 @@ export default function NavBar() {
                         <Button
                         as="a"
                         variant="ghost"
-                        aria-label="Home"
+                        aria-label="About"
                         my={5}
                         w="100%"
                         >
@@ -126,11 +137,22 @@ export default function NavBar() {
                         <Button
                         as="a"
                         variant="ghost"
-                        aria-label="Home"
+                        aria-label="Contact"
                         my={5}
                         w="100%"
                         >
                         Contact
+                        </Button>
+                    </NextLink>
+                    <NextLink href="/" passHref>
+                        <Button
+                        as="a"
+                        variant="ghost"
+                        aria-label="Login"
+                        my={5}
+                        w="100%"
+                        >
+                        Login
                         </Button>
                     </NextLink>
                 </Flex>
