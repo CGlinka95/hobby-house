@@ -1,9 +1,13 @@
 import React from "react";
-import { Container, Flex, Heading } from "@chakra-ui/react";
+import { 
+    Container, 
+    Flex, 
+    Heading 
+  } from "@chakra-ui/react";
 import NavBar from "../components/navbar/NavBar";
 import Sidebar from "../components/sidebar/SideBar"
 
-const Home = () => {
+export default function Home() {
   return (
     <Container maxW="container.xl" p={0}>
       <Flex py={7}>
@@ -17,5 +21,3 @@ const Home = () => {
     </Container>
   )
 }
-
-export default Home;

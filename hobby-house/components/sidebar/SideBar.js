@@ -1,9 +1,26 @@
-import { Avatar, Divider, Flex, Heading, IconButton, Text, Image } from "@chakra-ui/react"
-import { useState } from "react"
-import { FiMenu } from "react-icons/fi"
+import { 
+    Avatar, 
+    Divider, 
+    Flex, 
+    Heading, 
+    IconButton, 
+    Text 
+  } from "@chakra-ui/react"
+import React, { useState } from "react"
+import { 
+    FiMenu, 
+    FiHome 
+  } from "react-icons/fi"
+import { 
+    IoSearch, 
+    IoOptionsOutline, 
+    IoCartOutline, 
+    IoAlbumsOutline, 
+    IoHandLeftOutline 
+  } from "react-icons/io5"
+import NavItem from "./NavItem";
 
-
-const SideBar = () => {
+export default function SideBar() {
     const [navSize, changeNavSize] = useState("large")
     return (
         <Flex
@@ -24,7 +41,7 @@ const SideBar = () => {
               as="nav"
             >
                 <IconButton
-                  aria-label="Open Menu" 
+                  aria-label="/"
                   background="none"
                   mt={5}
                   _hover={{background: 'none'}}
@@ -37,6 +54,12 @@ const SideBar = () => {
                         changeNavSize("small")
                   }}
                 />
+                <NavItem navSize={navSize} icon={FiHome} title="Dashboard" description="This is the description for the dashboard" />
+                <NavItem navSize={navSize} icon={IoSearch} title="Search" active />
+                <NavItem navSize={navSize} icon={IoAlbumsOutline} title="Categories" />
+                <NavItem navSize={navSize} icon={IoCartOutline} title="Products" />
+                <NavItem navSize={navSize} icon={IoOptionsOutline} title="Settings" />
+                <NavItem navSize={navSize} icon={IoHandLeftOutline} title="Services" />
             </Flex>
             <Flex
               p="5%"
@@ -57,5 +80,3 @@ const SideBar = () => {
         </Flex>
     )
 }
-
-export default SideBar
