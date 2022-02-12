@@ -26,8 +26,9 @@ export default function SideBar() {
         <Flex
           pos="sticky"
           left="5"
-          h="85vh"
+          h="100vh"
           mt="2.5vh"
+          pr="1rem"
           boxShadow="0 4px 12px 0 rgba(0, 0, 0, 0.05)"
           borderRadius={navSize == "small" ? "15px" : "30px"}
           w={navSize == "small" ? "75px" : "200px"}
@@ -55,7 +56,7 @@ export default function SideBar() {
                   }}
                 />
                 <NavItem navSize={navSize} icon={FiHome} title="Dashboard" description="This is the description for the dashboard" />
-                <NavItem navSize={navSize} icon={IoSearch} title="Search" active />
+                <NavItem navSize={navSize} icon={IoSearch} title="Search" />
                 <NavItem navSize={navSize} icon={IoAlbumsOutline} title="Categories" />
                 <NavItem navSize={navSize} icon={IoCartOutline} title="Shopping Cart" />
                 <NavItem navSize={navSize} icon={IoOptionsOutline} title="Settings" />
