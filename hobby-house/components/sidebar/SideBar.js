@@ -28,7 +28,6 @@ export default function SideBar() {
           left="5"
           h="100vh"
           mt="2.5vh"
-          pr="1rem"
           boxShadow="0 4px 12px 0 rgba(0, 0, 0, 0.05)"
           borderRadius={navSize == "small" ? "15px" : "30px"}
           w={navSize == "small" ? "75px" : "200px"}

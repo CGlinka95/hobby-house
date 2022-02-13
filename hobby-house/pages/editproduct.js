@@ -2,7 +2,7 @@ import React from "react";
 import { 
     Box,
     Container, 
-    Flex,
+    Flex
   } from "@chakra-ui/react";
 import NavBar from "../components/navbar/NavBar";
 import Sidebar from "../components/sidebar/SideBar";
@@ -10,7 +10,7 @@ import Edit from "../components/edit/Edit"
 
 export default function EditProduct() {
   return (
-    <Container maxW="container.xxl" p={0}>
+    <Container maxW="container.xxl" p="1rem">
       <Box>
         <NavBar />
       </Box>

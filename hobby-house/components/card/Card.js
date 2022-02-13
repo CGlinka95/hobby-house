@@ -16,39 +16,46 @@ export default function Card() {
     }
     
     return (
-      <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
-        <Image src={product.imageUrl} alt={product.imageAlt} />
-        <Box p='6'>
-          <Box display='flex' alignItems='baseline'>
-            <Badge borderRadius='full' px='2' colorScheme='teal'>
-              New
-            </Badge>
+      <Box 
+        maxW="xs" 
+        borderWidth='1px' 
+        borderRadius='lg' 
+        boxShadow="0 4px 12px 0 rgba(0, 0, 0, 0.05)" 
+        overflow='hidden'
+      >
+          <Image src={product.imageUrl} alt={product.imageAlt} />
+          <Box p='6'>
+            <Box display='flex' alignItems='baseline'>
+              <Badge borderRadius='full' px='2' colorScheme="green">
+                New
+              </Badge>
+              <Box
+                fontWeight='bold'
+                letterSpacing='wide'
+                fontSize='md'
+                textTransform='uppercase'
+                ml='2'
+              >
+                {product.name}
+              </Box>
+            </Box>
             <Box
-              fontWeight='bold'
-              letterSpacing='wide'
-              fontSize='md'
-              textTransform='uppercase'
-              ml='2'
+              mt='1'
+              fontWeight='semibold'
+              lineHeight='tight'
+              color="gray.600"
             >
-              {product.name}
+              {product.description}
+            </Box>
+            <Box color="#D84727">
+              {product.formattedPrice}
+            </Box>
+            <Box ml="15rem">
+              <NextLink href='/editproduct' passHref>
+                <Link fontSize="sm">Edit</Link>
+              </NextLink>   
             </Box>
           </Box>
-          <Box
-            mt='1'
-            fontWeight='semibold'
-            lineHeight='tight'
-          >
-            {product.description}
-          </Box>
-          <Box>
-            {product.formattedPrice}
-          </Box>
-          <Box ml="19rem">
-            <NextLink href='/editproduct' passHref>
-              <Link fontSize="sm">Edit</Link>
-            </NextLink>   
-          </Box>
-        </Box>
       </Box>
     )
 }

@@ -12,6 +12,7 @@ import {
     FaTimesCircle 
   } from "react-icons/fa";
 import NextLink from 'next/link';
+import Logo from "./Logo";
 
 export default function NavBar() {
     const { colorMode, toggleColorMode } = useColorMode()
@@ -19,7 +20,10 @@ export default function NavBar() {
     const [display, changeDisplay] = useState('none')
     return (
         <Flex justifyContent="space-around">
-          <Heading p="1rem">Hobby House</Heading>
+          <Flex alignItems="center">
+            <Heading color="#EF7B45" pr="5px">Hobby House</Heading>
+            <Logo />
+          </Flex>
             <Flex align="center">  
               <Flex display={['none', 'none', 'flex', 'flex']}>
                 <NextLink href="/" passHref>
@@ -33,35 +37,37 @@ export default function NavBar() {
                     Home
                   </Button>
                 </NextLink>
-                <NextLink href="/" passHref>
+                <NextLink href="" passHref>
                   <Button
                       as="a"
                       variant="ghost"
                       aria-label="About"
                       my={5}
                       w="100%"
+                      color="#EF7B45"
                   >
                     About
                   </Button>
                 </NextLink>
-                <NextLink href="/" passHref>
+                <NextLink href="" passHref>
                   <Button
                       as="a"
                       variant="ghost"
                       aria-label="Contact"
                       my={5}
-                      w="100%"
+                      w="100%"   
                   >
                     Contact
                   </Button>
                 </NextLink>
-                <NextLink href="/" passHref>
+                <NextLink href="" passHref>
                   <Button
                       as="a"
                       variant="ghost"
                       aria-label="Login"
                       my={5}
                       w="100%"
+                      color="#EF7B45"
                   >
                     Login
                   </Button>
@@ -96,11 +102,13 @@ export default function NavBar() {
               <Flex justify="flex-end">
                 <IconButton 
                     mt={2}
-                    mr={2}
+                    mr={5}
                     aria-label="Close Menu"
                     size="lg"
                     icon={<FaTimesCircle />}
                     onClick={() => changeDisplay('none')}
+                    backgroundColor="gray.300"
+                    _hover={{backgroundColor: '#EF7B45'}}
                 />
               </Flex>
               <Flex
@@ -112,41 +120,49 @@ export default function NavBar() {
                       as="a"
                       variant="ghost"
                       aria-label="Home"
+                      color="gray.500"
                       my={5}
                       w="100%"
+                      _hover={{backgroundColor: '#EF7B45', color: '#ffffff'}}
                   >
                       Home
                   </Button>
                 </NextLink>
-                <NextLink href="/" passHref>
+                <NextLink href="" passHref>
                   <Button
                      as="a"
                      variant="ghost"
                      aria-label="About"
+                     color="gray.500"
                      my={5}
                      w="100%"
+                     _hover={{backgroundColor: '#EF7B45', color: '#ffffff'}}
                    >
                      About
                   </Button>
                 </NextLink>
-                <NextLink href="/" passHref>
+                <NextLink href="" passHref>
                   <Button
                      as="a"
                      variant="ghost"
                      aria-label="Contact"
+                     color="gray.500"
                      my={5}
                      w="100%"
+                     _hover={{backgroundColor: '#EF7B45', color: '#ffffff'}}
                   >
                      Contact
                  </Button>
                 </NextLink>
-                <NextLink href="/" passHref>
+                <NextLink href="" passHref>
                   <Button
                      as="a"
                      variant="ghost"
                      aria-label="Login"
+                     color="gray.500"
                      my={5}
                      w="100%"
+                     _hover={{backgroundColor: '#EF7B45', color: '#ffffff'}}
                   >
                     Login
                   </Button>

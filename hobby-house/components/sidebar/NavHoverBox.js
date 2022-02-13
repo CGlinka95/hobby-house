@@ -17,7 +17,7 @@ export default function NavHoverBox({icon, title, description}) {
               h={0}
               borderTop="10px solid transparent"
               borderBottom="10px solid transparent"
-              borderRight="10px solid #82AAAD"
+              borderRight="10px solid #EF7B45"
             />
             <Flex
               h={200}
@@ -26,7 +26,7 @@ export default function NavHoverBox({icon, title, description}) {
               flexDir="column"
               alignItems="center"
               justify="center"
-              backgroundColor="#82AAAD"
+              backgroundColor="#EF7B45"
               borderRadius="10px"
               color="white"
               textAlign="center"
