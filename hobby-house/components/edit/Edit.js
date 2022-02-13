@@ -6,9 +6,7 @@ import {
     Heading, 
     Text, 
     SimpleGrid, 
-    GridItem, 
-    Select, 
-    Checkbox, 
+    GridItem,  
     Button, 
     InputGroup,
     InputLeftAddon,
@@ -28,7 +26,7 @@ export default function Edit() {
                 <Heading>Edit Product</Heading>
                 <Text>You can update a currently listed product here.</Text>
             </VStack>
-            <SimpleGrid columns={2} columnGap={3} rowGap={6} w="full">
+            <SimpleGrid id="productForm" columns={2} columnGap={3} rowGap={6} w="full">
                 <GridItem colSpan={1}>
                     <FormControl>
                         <FormLabel>Name</FormLabel>

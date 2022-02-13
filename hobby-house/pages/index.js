@@ -7,9 +7,6 @@ import {
 import NavBar from "../components/navbar/NavBar";
 import Sidebar from "../components/sidebar/SideBar";
 import Card from "../components/card/Card";
-import { ref as storageRef, uploadBytes, getDownloadUrl } from "firebase/storage";
-import { ref as databaseRef, push, set, get } from "firebase/database";
-import { db, storage } from "./libs/firebase/firebaseConfig";
 
 export default function Home() {
   return (

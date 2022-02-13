@@ -1,6 +1,7 @@
 {
   "name": "hobby-house",
   "private": true,
+  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
