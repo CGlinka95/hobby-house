@@ -8,12 +8,24 @@ import NextLink from 'next/link';
 
 export default function Card() {
     const product = {
+      key: '-MtmsoSQ8VxmThuASr6tG5c',
+      sku: 'gtGtS2jAI7VQd6lYpNUL',
       imageUrl: 'https://craftscapades.files.wordpress.com/2016/02/kirby_front.jpg',
       imageAlt: 'Handmade crochet of Kirby sitting on a star',
       name: 'Kirby Stuffie',
       description: 'Crocheted cotton Kirby stuffie with wool filling sitting on a star.',
       formattedPrice: '$19.99',
     }
+
+    // const product2 = {   
+    //   key: "-MtmsoSQ8VxmThuASgfy7feu",
+    //   sku: "LVh7vc7MCySaImNXBfVt",
+    //   imageUrl: "https://craftscapades.com/finished-projects-2/#jp-carousel-119",
+    //   imageAlt: 'Handmade cross stitch of Toon Link in a Christmas outfit',
+    //   name: "Christmas Toon Link",
+    //   formattedPrice: "$12.99",
+    //   description: "Cross stitch pattern of Toon Link in a Christmas outfit."
+    // }
     
     return (
       <Box 

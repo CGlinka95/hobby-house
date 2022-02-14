@@ -1,0 +1,57 @@
+{
+    "products": {
+        "-MtmsoSQ8VxmThuASr6tG5c": {
+          "key": "-MtmsoSQ8VxmThuASr6tG5c",
+          "sku": "gtGtS2jAI7VQd6lYpNUL",
+          "image": "https://craftscapades.files.wordpress.com/2016/02/kirby_front.jpg",
+          "name": "Kirby Stuffie",
+          "price": "1999",
+          "description": "Crocheted cotton Kirby stuffie with wool filling sitting on a star."
+        },
+
+        "-MtmsoSQ8VxmThuASgfy7feu": {
+            "key": "-MtmsoSQ8VxmThuASgfy7feu",
+            "sku": "LVh7vc7MCySaImNXBfVt",
+            "image": "https://craftscapades.com/finished-projects-2/#jp-carousel-119",
+            "name": "Christmas Toon Link",
+            "price": "1299",
+            "description": "Cross stitch pattern of Toon Link in a Christmas outfit."
+          },
+
+          "-MtmsoSQ8VxmThuASghgf7ew": {
+            "key": "-MtmsoSQ8VxmThuASghgf7ew",
+            "sku": "7g8eR7LBJqRPqQpht2qi",
+            "image": "https://craftscapades.com/finished-projects-2/#jp-carousel-129",
+            "name": "Scrooge McDuck Magnet",
+            "price": "999",
+            "description": "Perler bead creation of Scrooge McDuck to use as a fridge magnet."
+          },
+
+          "-MtmsoSQ8VxmThfghfefw9dw": {
+            "key": "-MtmsoSQ8VxmThfghfefw9dw",
+            "sku": "GNaYelLkEu4YmxYY1x88",
+            "image": "https://craftscapades.com/finished-projects-2/#jp-carousel-171",
+            "name": "Cheep-Cheep Stuffie",
+            "price": "1999",
+            "description": "Crocheted cotton Cheep-Cheep stuffie from Mario with wool filling."
+          },
+
+          "-MtmsoSQ8VxmThhfd7ftewf": {
+            "key": "-MtmsoSQ8VxmThhfd7ftewf",
+            "sku": "IUBmM2xiN0L02gwfPoA9",
+            "image": "https://craftscapades.com/finished-projects-2/#jp-carousel-67",
+            "name": "Skyrim Key-chain",
+            "price": "599",
+            "description": "Metal key-chain with the Skyrim logo punctured out."
+          },
+
+          "-MtmsoSQ8VxmTgdGDWdoa78dhuw": {
+            "key": "-MtmsoSQ8VxmTgdGDWdoa78dhuw",
+            "sku": "7NizY3oF9qScgh2J7pwi",
+            "image": "https://craftscapades.com/finished-projects-2/#jp-carousel-260",
+            "name": "Level Scene Blanket",
+            "price": "3499",
+            "description": "Crocheted cotton blanket of an 8-bit videogame level scene."
+          }
+      }
+}

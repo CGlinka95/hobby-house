@@ -13,18 +13,19 @@ Development of the website requires the following dependancies and devDependanci
     "@chakra-ui/react": "^1.8.3",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
+    "firebase": "^9.6.6",
+    "firebase-admin": "^10.0.2",
     "framer-motion": "^5.6.0",
     "next": "^12.0.10",
     "react": "^17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.3.1"
-},
-
-"devDependencies": {
+  },
+  "devDependencies": {
     "@types/node": "17.0.15",
     "@types/react": "17.0.39",
     "eslint": "8.8.0",
     "eslint-config-next": "12.0.10",
     "typescript": "4.5.5"
-}
+  }
 ```

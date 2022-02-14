@@ -8,7 +8,7 @@ import NavBar from "../components/navbar/NavBar";
 import Sidebar from "../components/sidebar/SideBar";
 import Card from "../components/card/Card";
 
-export default function Home() {
+export default function HobbyHouse() {
   return (
     <Container maxW="container.xxl" p="1rem">
       <Box>

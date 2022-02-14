@@ -6,7 +6,8 @@ import {
   } from "@chakra-ui/react";
 import NavBar from "../components/navbar/NavBar";
 import Sidebar from "../components/sidebar/SideBar";
-import Edit from "../components/edit/Edit"
+import Edit from "../components/edit/Edit";
+import Add from "../components/add/Add";
 
 export default function EditProduct() {
   return (
@@ -14,11 +15,12 @@ export default function EditProduct() {
       <Box>
         <NavBar />
       </Box>
-      <Flex gap="3.5rem">
+      <Flex gap="2rem">
         <Sidebar />
-        <Box>
+        <Flex>
+          <Add />
           <Edit />
-        </Box>
+        </Flex>
       </Flex>
     </Container>
   )
