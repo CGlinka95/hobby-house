@@ -1,4 +1,4 @@
-import React, { useState, useEffect }  from "react";
+import React from "react";
 import { 
     FormControl, 
     FormLabel, 
@@ -12,55 +12,12 @@ import {
     InputGroup,
     InputLeftAddon,
     Textarea,
-    Flex
 } from '@chakra-ui/react';
 // import firebase from 'firebase/app'
 // import 'firebase/firestore'
 // import { db } from "../../pages/libs/firebase/firebaseConfig"; 
 
 export default function Edit() {
-    // const [input, setInput] = useState("")
-    // const [products, setProducts] = useState([])
-
-    // useEffect(() => {
-    //     firebase
-    //         .firestore()
-    //         .collection()
-    //         .orderBy("timestamp", "desc")
-    //         .onSnapshot(snapshot => {
-    //             setProducts(snapshot.docs.map(doc => doc.data().product))
-    //         })
-    // })
-
-    // const sendData = () => {
-    //     try {
-    //         firebase
-    //             .firestore()
-    //             .collection() //collection sent to firestore
-    //             .doc(input) //set collection name to input to easily delete later
-    //             .set({
-    //                 product: input,
-    //                 timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-    //             })
-    //             .then(console.log("The product was successfully sent to cloud firestore."))
-    //     } catch (error) {
-    //         console.log(error)
-    //     }
-    // }
-
-    // const deleteProduct = (p) => {
-    //     try {
-    //         firebase
-    //             .firestore()
-    //             .collection()
-    //             .doc(p)
-    //             .delete()
-    //             .then(console.log("The product was successfully deleted."))
-    //     } catch (error) {
-    //         console.log(error)
-    //     }
-    // }
-
     return (
         <VStack 
             w="full" 
@@ -78,7 +35,7 @@ export default function Edit() {
                 <GridItem colSpan={1}>
                     <FormControl>
                         <FormLabel>Product Name</FormLabel>
-                        <Input type="text" /*onChange={(e) => setInput(e.target.value)}*/ required />
+                        <Input type="text" required />
                     </FormControl>
                 </GridItem>
                 <GridItem colSpan={1}>
@@ -108,7 +65,6 @@ export default function Edit() {
                         type="submit" 
                         size="lg" 
                         w="full"
-                        // onClick={() => sendData()}
                     >
                         Submit
                     </Button>
@@ -117,32 +73,12 @@ export default function Edit() {
                     <Button 
                         type="submit" 
                         size="lg" 
-                        w="full"
-                        // onClick={() => deleteProduct(p)} 
+                        w="full" 
                     >
                         Delete
                     </Button>
                 </GridItem>
             </SimpleGrid>
-
-            {/* {products.map((p, i) => {
-                return (
-                    <>
-                        <Flex
-                            key={i}
-                            w="100%"
-                            p={5}
-                            my={2}
-                            align="center"
-                            borderRadius={5}
-                            justifyContent="space-between"
-                        >
-                            <Text fontSize="xl" mr={4}>{i + 1}.</Text>
-                            <Text>{p}</Text>
-                        </Flex>
-                    </>
-                )
-            })} */}
         </VStack>
     );
 };

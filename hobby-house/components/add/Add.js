@@ -32,7 +32,7 @@ export default function Add() {
                 <GridItem colSpan={1}>
                     <FormControl>
                         <FormLabel>Product Name</FormLabel>
-                        <Input type="text" /*onChange={(e) => setInput(e.target.value)}*/ required />
+                        <Input type="text" required />
                     </FormControl>
                 </GridItem>
                 <GridItem colSpan={1}>
@@ -68,7 +68,6 @@ export default function Add() {
                         type="submit" 
                         size="lg" 
                         w="full"
-                        // onClick={() => sendData()}
                     >
                         Add
                     </Button>
