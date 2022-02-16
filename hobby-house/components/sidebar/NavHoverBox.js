@@ -6,7 +6,7 @@ import {
     Icon 
 } from "@chakra-ui/react";
 
-export default function NavHoverBox({icon, title, description}) {
+export default function NavHoverBox({ icon, title, description }) {
     return (
         <>
             <Flex 
@@ -22,7 +22,6 @@ export default function NavHoverBox({icon, title, description}) {
             <Flex
               h={200}
               w={200}
-              w="100%"
               flexDir="column"
               alignItems="center"
               justify="center"
