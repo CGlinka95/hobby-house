@@ -41,12 +41,11 @@ export default function SideBar() {
               as="nav"
             >
                 <IconButton
-                  aria-label="/"
+                  aria-label="hamburger menu"
                   background="none"
                   mt={5}
                   _hover={{background: 'none'}}
                   icon={<FiMenu />}
-                  aria-
                   onClick={() => {
                     if (navSize == "small")
                         changeNavSize("large")

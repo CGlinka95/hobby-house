@@ -9,12 +9,20 @@ import {
     SimpleGrid, 
     GridItem,  
     Button, 
-    InputGroup,
-    InputLeftAddon,
     Textarea,
+    NumberInput,
+    NumberInputField,
+    NumberInputStepper,
+    NumberIncrementStepper,
+    NumberDecrementStepper,
 } from '@chakra-ui/react'; 
 
 export default function Add() {
+    const format = (val) => `$` + val
+    const parse = (val) => val.replace(/^\$/, '')
+
+    const [value, setValue] = React.useState('0.00')
+
     return (
         <VStack 
             w="full" 
@@ -38,10 +46,16 @@ export default function Add() {
                 <GridItem colSpan={1}>
                     <FormControl>
                         <FormLabel>Price</FormLabel>
-                        <InputGroup>
-                            <InputLeftAddon children="$" />
-                            <Input type="number" placeholder="0.00" required />
-                        </InputGroup>
+                        <NumberInput
+                          onChange ={(valueString) => setValue(parse(valueString))}
+                          value={format(value)}
+                        >
+                            <NumberInputField />
+                            <NumberInputStepper>
+                                <NumberIncrementStepper />
+                                <NumberDecrementStepper />
+                            </NumberInputStepper>
+                        </NumberInput>
                     </FormControl>
                 </GridItem>
                 <GridItem colSpan={2}>
@@ -58,7 +72,7 @@ export default function Add() {
                 </GridItem>
                 <GridItem colSpan={2}>
                     <FormControl>
-                        <FormLabel>Sku</FormLabel>
+                        <FormLabel>Sku #</FormLabel>
                         <Input type="text" variant="flushed" placeholder="Product sku identifier here" required />
                     </FormControl>
                 </GridItem>

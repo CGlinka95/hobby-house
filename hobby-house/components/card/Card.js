@@ -63,7 +63,7 @@ export default function Card() {
               {product.formattedPrice}
             </Box>
             <Box ml="15rem">
-              <NextLink href='/editproduct' passHref>
+              <NextLink href='/product' passHref>
                 <Link fontSize="sm">Edit</Link>
               </NextLink>   
             </Box>

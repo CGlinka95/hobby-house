@@ -9,8 +9,11 @@ import {
     SimpleGrid, 
     GridItem,  
     Button, 
-    InputGroup,
-    InputLeftAddon,
+    NumberInput,
+    NumberInputField,
+    NumberInputStepper,
+    NumberIncrementStepper,
+    NumberDecrementStepper,
     Textarea,
 } from '@chakra-ui/react';
 // import firebase from 'firebase/app'
@@ -18,6 +21,11 @@ import {
 // import { db } from "../../pages/libs/firebase/firebaseConfig"; 
 
 export default function Edit() {
+    const format = (val) => `$` + val
+    const parse = (val) => val.replace(/^\$/, '')
+
+    const [value, setValue] = React.useState('0.00')
+
     return (
         <VStack 
             w="full" 
@@ -31,7 +39,7 @@ export default function Edit() {
                 <Heading>Edit Product</Heading>
                 <Text>You can update or delete a currently listed product here.</Text>
             </VStack>
-            <SimpleGrid id="productForm" columns={2} columnGap={3} rowGap={6} w="full">
+            <SimpleGrid columns={2} columnGap={3} rowGap={6} w="full">
                 <GridItem colSpan={1}>
                     <FormControl>
                         <FormLabel>Product Name</FormLabel>
@@ -41,10 +49,16 @@ export default function Edit() {
                 <GridItem colSpan={1}>
                     <FormControl>
                         <FormLabel>Price</FormLabel>
-                        <InputGroup>
-                            <InputLeftAddon children="$" />
-                            <Input type="number" placeholder="0.00" required />
-                        </InputGroup>
+                        <NumberInput
+                          onChange ={(valueString) => setValue(parse(valueString))}
+                          value={format(value)}
+                        >
+                            <NumberInputField />
+                            <NumberInputStepper>
+                                <NumberIncrementStepper />
+                                <NumberDecrementStepper />
+                            </NumberInputStepper>
+                        </NumberInput>
                     </FormControl>
                 </GridItem>
                 <GridItem colSpan={2}>

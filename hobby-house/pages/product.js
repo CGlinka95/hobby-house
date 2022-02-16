@@ -9,7 +9,7 @@ import Sidebar from "../components/sidebar/SideBar";
 import Edit from "../components/edit/Edit";
 import Add from "../components/add/Add";
 
-export default function EditProduct() {
+export default function Product() {
   return (
     <Container maxW="container.xxl" p="1rem">
       <Box>
